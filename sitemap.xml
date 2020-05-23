@@ -3,86 +3,142 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/adsasd/</loc>
-    <lastmod>2020-05-21T15:24:11+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-05-21T15:26:43+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/final/</loc>
-    <lastmod>2020-05-21T15:26:43+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-05-21T15:26:43+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/sdds/</loc>
-    <lastmod>2020-05-21T15:20:28+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/sddssddsd/</loc>
-    <lastmod>2020-05-21T15:20:39+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/sdsdsdsd/</loc>
-    <lastmod>2020-05-21T15:21:00+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/test-post/</loc>
-    <lastmod>2020-05-21T14:10:13+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/buildstuff/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/streaming/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
+    <loc>/post/lt-blogink-su-r/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/it/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/it/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-05-23T17:08:54+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/lt-sugriebti-ja-ir-nepaleisti/</loc>
+    <lastmod>2020-05-21T20:18:58+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/deadlift/</loc>
+    <lastmod>2020-05-21T20:21:55+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/sports/</loc>
+    <lastmod>2020-05-21T20:21:55+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/sports/</loc>
+    <lastmod>2020-05-21T20:18:58+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/reducation/</loc>
+    <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/bs2019/</loc>
+    <lastmod>2019-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/bs2018/</loc>
+    <lastmod>2018-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/buildstuff/</loc>
+    <lastmod>2018-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/strongman/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/mastersproject/</loc>
+    <lastmod>2018-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/lt-starto-pozicija-mirusiuju-atkelime/</loc>
+    <lastmod>2020-05-21T20:16:16+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/kodel-deadlift-lt/</loc>
+    <lastmod>2020-05-21T20:21:55+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/misc/</loc>
+    <lastmod>2020-05-21T20:21:55+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/strengthclash/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/vupowerlifting/</loc>
+    <lastmod>2015-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/gaming/</loc>
+    <lastmod>2010-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/gaming/</loc>
+    <lastmod>2010-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/movienations/</loc>
+    <lastmod>2010-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
   </url>
   
   <url>

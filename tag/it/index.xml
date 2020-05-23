@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT | DEADLIFT.LT</title>
+    <link>/tag/it/</link>
+      <atom:link href="/tag/it/index.xml" rel="self" type="application/rss+xml" />
+    <description>IT</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras 2020 ©</copyright><lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>IT</title>
+      <link>/tag/it/</link>
+    </image>
+    
+    <item>
+      <title>[LT] Blogink su R</title>
+      <link>/post/lt-blogink-su-r/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lt-blogink-su-r/</guid>
+      <description>&lt;p&gt;R netinkamas darbui su Big Data, administravimui, mašininio mokymo algoritmams produkcijoje, back-end&amp;rsquo;ui, produkcinio lygio web aplikacijoms. Todėl lieka tik patvirtinti faktą, kad su R pagalba negalima sukurti asmeninio blogo. Jei visais šiais dalykais netikite, skaitykite toliau - papasakosiu apie tai, kaip pasigaminti asmeninę svetainę naudojant tik R sintaksę, turėti pilną sveitainės kontrolę, HTTPS, hostingą, versijavimą ir už tai nemokėti nė cento.&lt;/p&gt;
+&lt;p&gt;Kurti HTTP dokumentus su R galima jau seniai - ačiū 
+&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rmarkdown&lt;/a&gt;. Tačiau prieš daugiau nei du metus pasirodė labai stiprus rmarkdown paturbinimas, leidžiantis R vartotojams būti ir Web developeriais - 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt; (iš esmės naudojant R galima dirbti ir kunigu-suvirintoju). Šis paketas palaiko pačius populiariausius statinių web puslapių kūrimo framework&amp;rsquo;us - 
+&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt;,  
+&lt;a href=&#34;https://jekyllrb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt;, 
+&lt;a href=&#34;https://hexo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;. Todėl užtenka pasirinkti svetainės karkasą ir važiuojam! Savo blogui aš pasirinkau 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic&lt;/a&gt; temą iš hugo.&lt;/p&gt;
+&lt;p&gt;Nuo ko pradėti? Dokumentaciją rasite 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;čia&lt;/a&gt;, bet galite tiesiog įvykdyti šias komandas R aplinkoje:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&#39;blogdown&#39;)
+blogdown::install_hugo()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tuomet RStudio (taip, su Rstudio tai daryti patogiausia) lange paspauskite:&lt;/p&gt;
+&lt;p&gt;New Project → Website using blogdown → Užpildykite reikalingus laukus ir pasirinkite temą (pvz. yihui/hugo-lithium arba gcushen/hugo-academic)&lt;/p&gt;
+&lt;p&gt;Savąją svetainę peržiūrėti galite naudodami šią funkciją:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown:::serve_site()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Naujo posto rašymas:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown:::new_post_addin()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Konfiguracijai naudojami &lt;strong&gt;toml&lt;/strong&gt; plėtinio failai, turinys kuriamas markdown sinktakse ir guli &lt;strong&gt;/content&lt;/strong&gt; direktorijoje. Sugeneravus svetainę, visi reikalingi failai atsiranda &lt;strong&gt;/public&lt;/strong&gt; direktorijoje - tuomet galima leisti web serverį ir peržiūrėti naršyklėje (blogdown tai padaro už jus naudodamas servr biblioteką). Kiekvieną kartą išsaugojus turinį (.md arba konfiguracinius failus), svetainė persikraus žaibiškai greitai ir naršyklėje matysite naujausią versiją.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ok, bet kas toliau? Juk neatidarinėsim porto į išorę iš lokalaus tinklo?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dauguma žmonių yra pažįstami su github&amp;rsquo;u. Tačiau gali būti, jog negirdėjote apie 
+&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub pages&lt;/a&gt; funkcionalumą (kitu atveju turbūt nebūtumėte atsidarę šio įrašo). Viskas labai detaliai paaiškinama 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;šioje&lt;/a&gt; dokumentacijoje, tik naudojant blogdown reikia padaryti dar vieną papildomą triuką - sukurti tuščią &lt;strong&gt;.nojekyll&lt;/strong&gt; failą public (jūsų sveitainės) repositorijoje. Taigi, susumuojant:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Užsiregistruojame 
+&lt;a href=&#34;github.com&#34;&gt;github.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sukuriame repositoriją, kuriose laikysite kodą (&lt;strong&gt;private&lt;/strong&gt;, vardas gali būti bet koks)&lt;/li&gt;
+&lt;li&gt;Sukuriame repositoriją, kuriose laikysite viešai pasiekiamą svetainės turinį (&lt;strong&gt;public&lt;/strong&gt;, vardas turi būti &lt;strong&gt;&lt;USERNAME&gt;.github.io&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Sudedame projekto turinį į kodo repositoriją&lt;/li&gt;
+&lt;li&gt;Konfiguracijoje &lt;strong&gt;config.toml&lt;/strong&gt; pakeičiame: baseurl = &amp;ldquo;https://&lt;USERNAME&gt;.github.io/&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Ištriname public direktorijos turinį&lt;/li&gt;
+&lt;li&gt;Įdedame public direktoriją kaip submodulį:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;git submodule add -f -b master https://github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;USERNAME&amp;gt;.github.io.git public
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Atnaujiname kodo dalies github repositoriją:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;git add .
+git commit -m &amp;quot;Initial commit&amp;quot;
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Sugeneruojame public turinį R aplinkoje:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown:::serve_site()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Sukuriame tuščią failą &lt;strong&gt;.nojekyll&lt;/strong&gt;, kad github&amp;rsquo;as žinotų, jog tai ne jekyll template&amp;rsquo;as&lt;/li&gt;
+&lt;li&gt;Įeiname į github pages repositoriją (atsimenate - ją pridėjome kaip modulį). Sustumiame visą turinį į github&amp;rsquo;ą:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;cd public
+git add .
+git commit -m &amp;quot;Build website&amp;quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Viskas!&lt;/strong&gt; Savo svetainės turinį dabar turėtumėte pasiekti &lt;strong&gt;https://jūsų_vardas.github.io/&lt;/strong&gt; adresu. Jeigu kur nors strigsite - klauskite arba &lt;strong&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/RTFM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RTFM&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &amp;ldquo;Powered by the Academic theme for Hugo.&amp;rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - respect&amp;rsquo;as Hugo ir Academic temos kūrėjams.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R in Action</title>
+      <link>/project/reducation/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/project/reducation/</guid>
+      <description>&lt;p&gt;Sometimes we go back to school and talk about Big Data including big data processing and monitoring. From my side, I always promote R programming language and powerful things you can do with R in a simple way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Racing cars controlled by mind</title>
+      <link>/project/bs2019/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/project/bs2019/</guid>
+      <description>&lt;p&gt;This time R served as a backend for user registration, controlling car parameters and front end page. The 
+&lt;a href=&#34;https://www.rplumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;plumber&lt;/a&gt; package made the development really easy (that&amp;rsquo;s what plumbers do).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;plumber.png&#34; alt=&#34;REST API build with R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Our booth was one of the most popular during the whole conference.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;stats.png&#34; alt=&#34;Game statistics&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Augmented reality pool table</title>
+      <link>/project/bs2018/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/project/bs2018/</guid>
+      <description>&lt;p&gt;Can you draw a pool table and make some real-time dashboards? &amp;ldquo;Sure I can.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The whole project was a huge team effort! However, the interesting part for me was creating real-time visualizations from a data stream. I can tell you a secret - it&amp;rsquo;s the reactivePoll function in shiny server. How to draw a table, some balls and a path? The ggplot2 comes to the rescue with just a few lines of code.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;pool.png&#34; alt=&#34;Pool table visualization&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dbplyr package helped to summarise statistics and DT for table visualization - just in a few lines of code as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;stats.png&#34; alt=&#34;Game statistics&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Master Thesis</title>
+      <link>/project/mastersproject/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/project/mastersproject/</guid>
+      <description>&lt;p&gt;It was a great honor to receive an award from Vytautas Janilionis in the National Prof. Jonas Matulionis mathematics competition back in 2007. Who could have thought that after a decade I will have this person as a supervisor for my Master&amp;rsquo;s Project in Data Science and I will do the last presentation in the auditorium named under J. Matulionis name. Being the first test rabbits in Vilnius group turned out just fine!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

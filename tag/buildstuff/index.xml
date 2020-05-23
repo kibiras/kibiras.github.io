@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BuildStuff | deadlift.lt</title>
+    <title>BuildStuff | DEADLIFT.LT</title>
     <link>/tag/buildstuff/</link>
       <atom:link href="/tag/buildstuff/index.xml" rel="self" type="application/rss+xml" />
     <description>BuildStuff</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras (c)</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras 2020 ©</copyright><lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>BuildStuff</title>
@@ -13,19 +13,15 @@
     </image>
     
     <item>
-      <title>Build Stuff 2019</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Racing cars with your mind</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+      <title>Augmented reality pool table</title>
+      <link>/project/bs2018/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/project/bs2018/</guid>
+      <description>&lt;p&gt;Can you draw a pool table and make some real-time dashboards? &amp;ldquo;Sure I can.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The whole project was a huge team effort! However, the interesting part for me was creating real-time visualizations from a data stream. I can tell you a secret - it&amp;rsquo;s the reactivePoll function in shiny server. How to draw a table, some balls and a path? The ggplot2 comes to the rescue with just a few lines of code.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;pool.png&#34; alt=&#34;Pool table visualization&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dbplyr package helped to summarise statistics and DT for table visualization - just in a few lines of code as well.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;stats.png&#34; alt=&#34;Game statistics&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
