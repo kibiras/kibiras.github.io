@@ -24,7 +24,7 @@
 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt;,  
 &lt;a href=&#34;https://jekyllrb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt;, 
 &lt;a href=&#34;https://hexo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;. Todėl užtenka pasirinkti svetainės karkasą ir važiuojam! Savo blogui aš pasirinkau 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic&lt;/a&gt; temą iš hugo.&lt;/p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic&lt;/a&gt; temą skirtą hugo.&lt;/p&gt;
 &lt;p&gt;Nuo ko pradėti? Dokumentaciją rasite 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;čia&lt;/a&gt;, bet galite tiesiog įvykdyti šias komandas R aplinkoje:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&#39;blogdown&#39;)

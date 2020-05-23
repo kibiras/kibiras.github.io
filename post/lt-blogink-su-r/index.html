@@ -205,6 +205,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167452740-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-167452740-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -669,7 +707,7 @@
 <a href="https://gohugo.io/" target="_blank" rel="noopener">hugo</a>,  
 <a href="https://jekyllrb.com/" target="_blank" rel="noopener">jekyll</a>, 
 <a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a>. Todėl užtenka pasirinkti svetainės karkasą ir važiuojam! Savo blogui aš pasirinkau 
-<a href="https://sourcethemes.com/academic/docs/" target="_blank" rel="noopener">academic</a> temą iš hugo.</p>
+<a href="https://sourcethemes.com/academic/docs/" target="_blank" rel="noopener">academic</a> temą skirtą hugo.</p>
 <p>Nuo ko pradėti? Dokumentaciją rasite 
 <a href="https://bookdown.org/yihui/blogdown/installation.html" target="_blank" rel="noopener">čia</a>, bet galite tiesiog įvykdyti šias komandas R aplinkoje:</p>
 <pre><code class="language-r">install.packages('blogdown')

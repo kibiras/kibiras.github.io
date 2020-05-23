@@ -205,6 +205,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167452740-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-167452740-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -241,7 +279,7 @@
     
       <meta property="article:published_time" content="2018-05-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-05-21T20:21:55&#43;03:00">
+    <meta property="article:modified_time" content="2020-05-23T20:21:55&#43;03:00">
   
 
   
@@ -270,7 +308,7 @@
   "headline": "[LT] Kodėl deadlift.lt?",
   
   "datePublished": "2018-05-01T00:00:00Z",
-  "dateModified": "2020-05-21T20:21:55+03:00",
+  "dateModified": "2020-05-23T20:21:55+03:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +586,7 @@
           Last updated on
       
     
-    2020-05-21
+    2020-05-23
   </span>
   
 
@@ -598,15 +636,15 @@
 
     <div class="article-style">
       <p><strong>“There is no reason to be alive if you can&rsquo;t do deadlift”</strong> - tarė Jón Páll Sigmarsson, 
-<a href="https://www.youtube.com/watch?v=ZWUcHKAj_tc" target="_blank" rel="noopener">atkėlęs du didžiulius vėžimo ratus, laikydamas juos už keturkampio formos ašies WSM pirmenybėse</a>. Tiesa, ne ką ten patraukė, o atsistojo iš ketvirtinio pritūpimo pozicijos. Ne kiek laikydamasis, kiek prisirišęs. Ne tokį jau ir solidų atstumą. Ir ne taip jau lengvai pavyko išleisti žodžius iš burnos. Bet sugebėjimas, laikant 455 kilogramus rankose vienose svarbiausių sezono varžybų (kuriose, beje, šis į eskimą panašus vikingas 
-<a href="https://www.youtube.com/watch?v=I1Hx7GZByxk" target="_blank" rel="noopener">(eskimas čia jau kita istorija)</a>), monologu išberti vieną iš didžiųjų fizinio pasirengimo teorijos tiesų suprantama šnekamąja kalba tikrai vertas besąlygiškos pagarbos.</p>
-<p><img src="/img/deadliftpal.png" alt="Jón Páll Sigmarsson"></p>
+<a href="https://www.youtube.com/watch?v=ZWUcHKAj_tc" target="_blank" rel="noopener">atkėlęs du didžiulius vėžimo ratus, laikydamas juos už keturkampio formos ašies WSM pirmenybėse</a>. Tiesa, ne ką ten patraukė, o atsistojo iš ketvirtinio pritūpimo pozicijos. Ne kiek laikydamasis, kiek prisirišęs. Ne tokį jau ir solidų atstumą. Ir ne taip jau lengvai pavyko išleisti žodžius iš burnos. Bet sugebėjimas, laikant 455 kilogramus rankose vienose svarbiausių sezono varžybų šis 
+<a href="https://www.youtube.com/watch?v=I1Hx7GZByxk" target="_blank" rel="noopener">į eskimą panašus vikingas</a>, monologu išberti vieną iš didžiųjų fizinio pasirengimo tiesų suprantama šnekamąja kalba, tikrai vertas besąlygiškos pagarbos.</p>
+<img src="/img/deadliftpal.png" width="50%;">
 <p>Iš esmės toks ir šis blogas - nestruktūruotas, vietomis nusileidžiantis iki tik man įdomių detalių, nenorminė leksika, persunkta anglišku treniravimo ir IT žargonu, su velniškai ilgais sakiniais, kuriuose yra be galo daug būdų aplinkybių, išskirtų kableliais, kaip kad ir šis.</p>
-<p><strong>Kodėl deadliftas?</strong> Nes jei reikėtų pasirinkti vieną pratimą, geriausiai apsprendžiantį viso kūno pajėgumą, juo būtų deadliftas. Aišku Kaz’as turbūt švelniai ir politkorektiškai paprieštarautų šiam teiginiui, tačiau jo favorite - 
-<a href="https://www.youtube.com/watch?v=jyKYWqu8DOk" target="_blank" rel="noopener">rąsto kėlime</a> - limituojantis faktorius vis tik liks pečiai ir tricepsas. O deadlifte - visas posterior chainas (primityviai sakant - hamstringai (ir hamstringai yra ne vien kojos dvigalviai - čia dar vienas dalykas lost in translation kaip ir deadlift) + sėdmenys ir nugaros apačia), kuris savo ruožtu yra ne tik užima didesnį raumenų plotą kūne procentaliai, lyginant su raumenimis, reikalingais spausti svorį virš galvos (sąmoningai neskaičiuojame stabilizatorių, nes tuomet deadlifte apkrovimas būtų beveik 100%), bet ir turi didesnį carryoverį į kitas rungtis/pratimus/gyvenimiškas situacijas/instagramo laikus.</p>
+<p><strong>Kodėl deadliftas?</strong> Nes jei reikėtų pasirinkti vieną pratimą, geriausiai apsprendžiantį viso kūno pajėgumą, tai būtų šis veiksmas. Aišku Kaz’as turbūt švelniai ir politkorektiškai paprieštarautų minėtam teiginiui, tačiau jo favorite - 
+<a href="https://www.youtube.com/watch?v=jyKYWqu8DOk" target="_blank" rel="noopener">rąsto kėlime</a> - limituojantis faktorius vis tik liks pečiai ir tricepsas. O deadlifte - visas posterior chainas (primityviai sakant - hamstringai (ir hamstringai yra ne vien kojos dvigalviai - čia dar vienas dalykas lost in translation kaip ir deadlift) + sėdmenys + nugaros apačia), kuris, savo ruožtu, ne tik užima didesnį raumenų plotą kūne procentaliai, bet ir turi didesnį <em>carryoverį</em> į kitas rungtis/pratimus/gyvenimiškas situacijas/instagramo laikus.</p>
 <p><strong>Kodėl man reikalingas blogas?</strong> Noriu išbandyti 
-<a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> paketą su R. O jei rimtai - tiesiog noriu vietos, kurioje galėčiau padėti savo sąmonės srautą, avantiūras ir keistus dalykus, kuriuos darau laisvu laiku, nefloodinant bendro srauto socialiniuose tinkluose, nes ir taip nuo daugelio saviraiškos jau galima vemti. Taip pat keli draugai karts nuo karto užklausdavo, kodėl blogo nerašau. Iki šiol laikiausi nuomonės kaip ir vienas mano pažįstamas profesorius. Užklaustas, kodėl nerašo blogo, juk tiek daug naudingos informacijos turi sukaupęs, atsakė - &ldquo;O kam? Aš naujo darbo neieškau&rdquo;. Natūralu, jog žmogaus nuomonė gali keistis, bet aš darbo vis tiek neieškau.</p>
-<p>Iš pradžių galvojau rašyti tik apie sportą (juk deadlift.lt!), tačiau nusprendžiau viską sukišti po vienu stogu - IT, programavimą, jėgos sportą, netgi žaidimus. Kas norės atsirinks pagal tagus, o kitiems - ačiū už dėmesį.</p>
+<a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> paketą su R. O jei rimtai - tiesiog ie6kojau vietos, kurioje galėčiau padėti savo sąmonės srautą, avantiūras ir keistus dalykus, kuriuos darau laisvu laiku, <em>nefloodinant</em> bendro srauto socialiniuose tinkluose, nes ir taip nuo daugelio saviraiškos jau galima vemti. Taip pat keli draugai karts nuo karto užklausdavo, kodėl blogo nerašau. Iki šiol laikiausi nuomonės kaip ir vienas mano žinomas profesorius: paklaustas, kodėl nerašo blogo, juk tiek daug naudingos informacijos turi sukaupęs, atsakė - &ldquo;O kam? Aš naujo darbo neieškau&rdquo;. Natūralu, jog žmogaus nuomonė gali keistis, bet aš darbo irgi neieškau.</p>
+<p>Iš pradžių galvojau rašyti tik apie sportą (juk deadlift.lt!), tačiau nusprendžiau viską sukišti po vienu stogu - IT, programavimą, jėgos sportą, netgi žaidimus. Kas norės atsirinks pagal tagus, paveiksliukus ir aprašymus, o kitiems - ačiū už dėmesį ir geros dienos.</p>
 
     </div>
 

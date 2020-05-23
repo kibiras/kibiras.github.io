@@ -205,6 +205,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167452740-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-167452740-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -241,7 +279,7 @@
     
       <meta property="article:published_time" content="2020-05-21T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-05-21T20:18:58&#43;03:00">
+    <meta property="article:modified_time" content="2020-05-23T20:18:58&#43;03:00">
   
 
   
@@ -270,7 +308,7 @@
   "headline": "[LT] Sugriebti ją ir nepaleisti",
   
   "datePublished": "2020-05-21T00:00:00Z",
-  "dateModified": "2020-05-21T20:18:58+03:00",
+  "dateModified": "2020-05-23T20:18:58+03:00",
   
   "author": {
     "@type": "Person",
@@ -548,7 +586,7 @@
           Last updated on
       
     
-    2020-05-21
+    2020-05-23
   </span>
   
 
@@ -604,20 +642,28 @@
 <p>Bendrai, egzistuoja mažiausiai trys vertos dėmesio alternatyvos:</p>
 <ol>
 <li>Idealiausias variantas - <strong>magnezija ir štangos suėmimas delnais į save</strong>. Tokiu būdu ne tik būsite simetriškoje pozicijoje, bet ir stiprinsite savo suėmimą. Žinoma, kuomet svoriai perkopia 200 kilogramų ribą, šis suėmimas tampa problematiškas netgi pasaulinio lygio atletams. Tačiau taip nepamesite santykio su realybe ir netgi sugebėsite identifikuoti kitas problemas, pvz. centrinės nervų sistemos būseną. Iš pirmo žvilgsnio tai gali pasirodyti keistas teiginys, tačiau būtent suėmimo stiprumo sumažėjimas geriausiai apibūdina CNS nuovargį ir tai puikus indikatorius, jog reikia stabdyti su apkrovomis bei pasidaryti deload’o savaitę.</li>
-<li><strong>Hook grip</strong> arba suėmimas užraktu, kaip pavadintų senesnės kartos žmonės. Nors naudojant šį būdą išmesti štangos iš rankų yra praktiškai neįmanoma, jis turi vieną didelį minusą - skausmą. Žvėriškas štangos suėmimas sukelia žvėrišką skausmą, perlipus 250 kilogramų ribą. Reikia mažiausiai mėnesio priprasti prie šio metodo, jau nekalbant apie nutirpusius nykščius po treniruotės keletai dienų. Iš kitos pusės, šis būdas nelabai padeda stiprinti suėmimą (stiprina tik toleranciją skausmui), todėl vis tiek reikėtų papildomų pratimų grip’ui (pvz. Farmer’s walk).
-<img src="/img/hookgrip.jpg" alt="Hook grip"></li>
+<li><strong>Hook grip</strong> arba suėmimas užraktu, kaip pavadintų senesnės kartos žmonės. Nors naudojant šį būdą išmesti štangos iš rankų yra praktiškai neįmanoma, jis turi vieną didelį minusą - skausmą. Žvėriškas štangos suėmimas sukelia žvėrišką skausmą, perlipus 250 kilogramų ribą. Reikia mažiausiai mėnesio priprasti prie šio metodo, jau nekalbant apie nutirpusius nykščius po treniruotės keletai dienų. Iš kitos pusės, šis būdas nelabai padeda stiprinti suėmimą (stiprina tik toleranciją skausmui), todėl vis tiek reikėtų papildomų pratimų grip’ui (pvz. Farmer’s walk).</li>
+</ol>
+<img src="/img/hookgrip.jpg" width="50%;">
+<ol start="3">
 <li><strong>Strapsai</strong> arba raišteliai štangai laikyti. Prašau meskite į mane akmenį, jei nors kartą išgirdote šį lietuvišką ekvivalentą šnekamojoje kalboje. Tačiau ir jų yra skirtingų. Kada ir kokius naudoti?</li>
 </ol>
 <ul>
-<li><strong>Strapsai su kilpele</strong>. Paprasčiausias variantas, norintiems patogumo.
-<img src="/img/straps.jpg" alt="straps"></li>
-<li><strong>Paprasta plokščia virvė</strong>. Užsidėti sunkiau, tačiau keliant štangą jaučiamas oldschool vibe’as (juk viskas, kas gero buvo praeityje ir žmonija eina savidestrukcijos keliu, ar ne?).
-<img src="/img/strapsold.jpg" alt="straps"></li>
-<li><strong>&ldquo;8&rdquo; formos strapsai</strong>. Nors žmonija jau senokai planuoja kurti kolonijas Marse, šis “išradimas” yra sąlyginai naujas. Praktiškai jokios pridėtinės vertės jis nesukuria, nebent norima pasipuikuoti keliant sunkesnią štangą kelių sutaupytų amplitudės centimetrų sąskaitą (taip, šiuo budu apvyniojant štangą, ji laikosi ties pirštų galiukais). Tik prisirišti prie štangos patogiau.
-<img src="/img/straps8.jpeg" alt="straps"></li>
+<li><strong>Strapsai su kilpele</strong>. Paprasčiausias variantas, norintiems patogumo. Tačiau jei jau nuplyšta, tai visada toje pačioje vietoje.</li>
 </ul>
+<img src="/img/straps.jpg" width="30%;">
+<ul>
+<li><strong>Paprasta plokščia virvė</strong>. Užsidėti sunkiau, tačiau keliant štangą jaučiamas oldschool vibe’as (juk viskas, kas gero buvo praeityje ir žmonija eina savidestrukcijos keliu, ar ne?). Nesu matęs nei vienų suplyšusių tokios formos strapsų.</li>
+</ul>
+<img src="/img/strapsold.jpg" width="30%;">
+<ul>
+<li><strong>8-neto formos strapsai</strong>. Nors žmonija jau senokai planuoja kurti kolonijas Marse, šis išradimas yra sąlyginai naujas. Praktiškai jokios pridėtinės vertės treniruotėse jis nesukuria, nebent norima pasipuikuoti keliant sunkesnią štangą kelių sutaupytų amplitudės centimetrų sąskaitą (taip, šiuo budu apvyniojant štangą, ji laikosi ties pirštų galiukais). Tik prisirišti prie štangos patogiau. Tiesa, tiek 
+<a href="https://www.youtube.com/watch?v=T9Y4o_BqC0A" target="_blank" rel="noopener">500kg</a>, tiek 
+<a href="https://www.youtube.com/watch?v=2kEC7X1FUIg" target="_blank" rel="noopener">501kg</a> <em>deadlifto</em> rekordai buvo atlikti naudojant juos.</li>
+</ul>
+<img src="/img/straps8.jpeg" width="30%;">
 <p>Bet su papildoma įranga galima ir apsigauti. Niekada nenaudokite pirštinių štangos atkėlimams, netgi jei jos yra su integruotais dirželiais. Pirmoji problema, kad šią garderobo detalę reikės tinkamai priderinti prie aprangos. Kitu atveju šio aksesuaro nešiojomas nebetenka prasmės. Antroji - pirštinių nešiotojai yra tiesiog užprogramuoti būti silpni. Ar matėte nors vieną dėmesio vertą kėlimą, atliktą su pirštinėmis? Aš - ne, ir turbūt ne be reikalo. Papildomos medžiagos, skiriančios du objektus, Jūs greičiausiai norėsite saugaus sekso atveju, bet ne keliant savo deadlift’o maksimumą.</p>
-<p><img src="/img/gloves.jpg" alt="straps"></p>
+<img src="/img/gloves.jpg" width="50%;">
 
     </div>
 

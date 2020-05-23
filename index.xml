@@ -24,7 +24,7 @@
 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt;,  
 &lt;a href=&#34;https://jekyllrb.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt;, 
 &lt;a href=&#34;https://hexo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;. Todėl užtenka pasirinkti svetainės karkasą ir važiuojam! Savo blogui aš pasirinkau 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic&lt;/a&gt; temą iš hugo.&lt;/p&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic&lt;/a&gt; temą skirtą hugo.&lt;/p&gt;
 &lt;p&gt;Nuo ko pradėti? Dokumentaciją rasite 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/installation.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;čia&lt;/a&gt;, bet galite tiesiog įvykdyti šias komandas R aplinkoje:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&#39;blogdown&#39;)
@@ -94,20 +94,28 @@ git push origin master
 &lt;p&gt;Bendrai, egzistuoja mažiausiai trys vertos dėmesio alternatyvos:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Idealiausias variantas - &lt;strong&gt;magnezija ir štangos suėmimas delnais į save&lt;/strong&gt;. Tokiu būdu ne tik būsite simetriškoje pozicijoje, bet ir stiprinsite savo suėmimą. Žinoma, kuomet svoriai perkopia 200 kilogramų ribą, šis suėmimas tampa problematiškas netgi pasaulinio lygio atletams. Tačiau taip nepamesite santykio su realybe ir netgi sugebėsite identifikuoti kitas problemas, pvz. centrinės nervų sistemos būseną. Iš pirmo žvilgsnio tai gali pasirodyti keistas teiginys, tačiau būtent suėmimo stiprumo sumažėjimas geriausiai apibūdina CNS nuovargį ir tai puikus indikatorius, jog reikia stabdyti su apkrovomis bei pasidaryti deload’o savaitę.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hook grip&lt;/strong&gt; arba suėmimas užraktu, kaip pavadintų senesnės kartos žmonės. Nors naudojant šį būdą išmesti štangos iš rankų yra praktiškai neįmanoma, jis turi vieną didelį minusą - skausmą. Žvėriškas štangos suėmimas sukelia žvėrišką skausmą, perlipus 250 kilogramų ribą. Reikia mažiausiai mėnesio priprasti prie šio metodo, jau nekalbant apie nutirpusius nykščius po treniruotės keletai dienų. Iš kitos pusės, šis būdas nelabai padeda stiprinti suėmimą (stiprina tik toleranciją skausmui), todėl vis tiek reikėtų papildomų pratimų grip’ui (pvz. Farmer’s walk).
-&lt;img src=&#34;https://deadlift.lt/img/hookgrip.jpg&#34; alt=&#34;Hook grip&#34;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hook grip&lt;/strong&gt; arba suėmimas užraktu, kaip pavadintų senesnės kartos žmonės. Nors naudojant šį būdą išmesti štangos iš rankų yra praktiškai neįmanoma, jis turi vieną didelį minusą - skausmą. Žvėriškas štangos suėmimas sukelia žvėrišką skausmą, perlipus 250 kilogramų ribą. Reikia mažiausiai mėnesio priprasti prie šio metodo, jau nekalbant apie nutirpusius nykščius po treniruotės keletai dienų. Iš kitos pusės, šis būdas nelabai padeda stiprinti suėmimą (stiprina tik toleranciją skausmui), todėl vis tiek reikėtų papildomų pratimų grip’ui (pvz. Farmer’s walk).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;https://deadlift.lt/img/hookgrip.jpg&#34; width=&#34;50%;&#34;&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;strong&gt;Strapsai&lt;/strong&gt; arba raišteliai štangai laikyti. Prašau meskite į mane akmenį, jei nors kartą išgirdote šį lietuvišką ekvivalentą šnekamojoje kalboje. Tačiau ir jų yra skirtingų. Kada ir kokius naudoti?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Strapsai su kilpele&lt;/strong&gt;. Paprasčiausias variantas, norintiems patogumo.
-&lt;img src=&#34;https://deadlift.lt/img/straps.jpg&#34; alt=&#34;straps&#34;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Paprasta plokščia virvė&lt;/strong&gt;. Užsidėti sunkiau, tačiau keliant štangą jaučiamas oldschool vibe’as (juk viskas, kas gero buvo praeityje ir žmonija eina savidestrukcijos keliu, ar ne?).
-&lt;img src=&#34;https://deadlift.lt/img/strapsold.jpg&#34; alt=&#34;straps&#34;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&amp;ldquo;8&amp;rdquo; formos strapsai&lt;/strong&gt;. Nors žmonija jau senokai planuoja kurti kolonijas Marse, šis “išradimas” yra sąlyginai naujas. Praktiškai jokios pridėtinės vertės jis nesukuria, nebent norima pasipuikuoti keliant sunkesnią štangą kelių sutaupytų amplitudės centimetrų sąskaitą (taip, šiuo budu apvyniojant štangą, ji laikosi ties pirštų galiukais). Tik prisirišti prie štangos patogiau.
-&lt;img src=&#34;https://deadlift.lt/img/straps8.jpeg&#34; alt=&#34;straps&#34;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strapsai su kilpele&lt;/strong&gt;. Paprasčiausias variantas, norintiems patogumo. Tačiau jei jau nuplyšta, tai visada toje pačioje vietoje.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;img src=&#34;https://deadlift.lt/img/straps.jpg&#34; width=&#34;30%;&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Paprasta plokščia virvė&lt;/strong&gt;. Užsidėti sunkiau, tačiau keliant štangą jaučiamas oldschool vibe’as (juk viskas, kas gero buvo praeityje ir žmonija eina savidestrukcijos keliu, ar ne?). Nesu matęs nei vienų suplyšusių tokios formos strapsų.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;https://deadlift.lt/img/strapsold.jpg&#34; width=&#34;30%;&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;8-neto formos strapsai&lt;/strong&gt;. Nors žmonija jau senokai planuoja kurti kolonijas Marse, šis išradimas yra sąlyginai naujas. Praktiškai jokios pridėtinės vertės treniruotėse jis nesukuria, nebent norima pasipuikuoti keliant sunkesnią štangą kelių sutaupytų amplitudės centimetrų sąskaitą (taip, šiuo budu apvyniojant štangą, ji laikosi ties pirštų galiukais). Tik prisirišti prie štangos patogiau. Tiesa, tiek 
+&lt;a href=&#34;https://www.youtube.com/watch?v=T9Y4o_BqC0A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;500kg&lt;/a&gt;, tiek 
+&lt;a href=&#34;https://www.youtube.com/watch?v=2kEC7X1FUIg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;501kg&lt;/a&gt; &lt;em&gt;deadlifto&lt;/em&gt; rekordai buvo atlikti naudojant juos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;https://deadlift.lt/img/straps8.jpeg&#34; width=&#34;30%;&#34;&gt;
 &lt;p&gt;Bet su papildoma įranga galima ir apsigauti. Niekada nenaudokite pirštinių štangos atkėlimams, netgi jei jos yra su integruotais dirželiais. Pirmoji problema, kad šią garderobo detalę reikės tinkamai priderinti prie aprangos. Kitu atveju šio aksesuaro nešiojomas nebetenka prasmės. Antroji - pirštinių nešiotojai yra tiesiog užprogramuoti būti silpni. Ar matėte nors vieną dėmesio vertą kėlimą, atliktą su pirštinėmis? Aš - ne, ir turbūt ne be reikalo. Papildomos medžiagos, skiriančios du objektus, Jūs greičiausiai norėsite saugaus sekso atveju, bet ne keliant savo deadlift’o maksimumą.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://deadlift.lt/img/gloves.jpg&#34; alt=&#34;straps&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://deadlift.lt/img/gloves.jpg&#34; width=&#34;50%;&#34;&gt;
 </description>
     </item>
     
@@ -212,15 +220,15 @@ git push origin master
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       <guid>https://deadlift.lt/post/kodel-deadlift-lt/</guid>
       <description>&lt;p&gt;&lt;strong&gt;“There is no reason to be alive if you can&amp;rsquo;t do deadlift”&lt;/strong&gt; - tarė Jón Páll Sigmarsson, 
-&lt;a href=&#34;https://www.youtube.com/watch?v=ZWUcHKAj_tc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atkėlęs du didžiulius vėžimo ratus, laikydamas juos už keturkampio formos ašies WSM pirmenybėse&lt;/a&gt;. Tiesa, ne ką ten patraukė, o atsistojo iš ketvirtinio pritūpimo pozicijos. Ne kiek laikydamasis, kiek prisirišęs. Ne tokį jau ir solidų atstumą. Ir ne taip jau lengvai pavyko išleisti žodžius iš burnos. Bet sugebėjimas, laikant 455 kilogramus rankose vienose svarbiausių sezono varžybų (kuriose, beje, šis į eskimą panašus vikingas 
-&lt;a href=&#34;https://www.youtube.com/watch?v=I1Hx7GZByxk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(eskimas čia jau kita istorija)&lt;/a&gt;), monologu išberti vieną iš didžiųjų fizinio pasirengimo teorijos tiesų suprantama šnekamąja kalba tikrai vertas besąlygiškos pagarbos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://deadlift.lt/img/deadliftpal.png&#34; alt=&#34;Jón Páll Sigmarsson&#34;&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=ZWUcHKAj_tc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atkėlęs du didžiulius vėžimo ratus, laikydamas juos už keturkampio formos ašies WSM pirmenybėse&lt;/a&gt;. Tiesa, ne ką ten patraukė, o atsistojo iš ketvirtinio pritūpimo pozicijos. Ne kiek laikydamasis, kiek prisirišęs. Ne tokį jau ir solidų atstumą. Ir ne taip jau lengvai pavyko išleisti žodžius iš burnos. Bet sugebėjimas, laikant 455 kilogramus rankose vienose svarbiausių sezono varžybų šis 
+&lt;a href=&#34;https://www.youtube.com/watch?v=I1Hx7GZByxk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;į eskimą panašus vikingas&lt;/a&gt;, monologu išberti vieną iš didžiųjų fizinio pasirengimo tiesų suprantama šnekamąja kalba, tikrai vertas besąlygiškos pagarbos.&lt;/p&gt;
+&lt;img src=&#34;https://deadlift.lt/img/deadliftpal.png&#34; width=&#34;50%;&#34;&gt;
 &lt;p&gt;Iš esmės toks ir šis blogas - nestruktūruotas, vietomis nusileidžiantis iki tik man įdomių detalių, nenorminė leksika, persunkta anglišku treniravimo ir IT žargonu, su velniškai ilgais sakiniais, kuriuose yra be galo daug būdų aplinkybių, išskirtų kableliais, kaip kad ir šis.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Kodėl deadliftas?&lt;/strong&gt; Nes jei reikėtų pasirinkti vieną pratimą, geriausiai apsprendžiantį viso kūno pajėgumą, juo būtų deadliftas. Aišku Kaz’as turbūt švelniai ir politkorektiškai paprieštarautų šiam teiginiui, tačiau jo favorite - 
-&lt;a href=&#34;https://www.youtube.com/watch?v=jyKYWqu8DOk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rąsto kėlime&lt;/a&gt; - limituojantis faktorius vis tik liks pečiai ir tricepsas. O deadlifte - visas posterior chainas (primityviai sakant - hamstringai (ir hamstringai yra ne vien kojos dvigalviai - čia dar vienas dalykas lost in translation kaip ir deadlift) + sėdmenys ir nugaros apačia), kuris savo ruožtu yra ne tik užima didesnį raumenų plotą kūne procentaliai, lyginant su raumenimis, reikalingais spausti svorį virš galvos (sąmoningai neskaičiuojame stabilizatorių, nes tuomet deadlifte apkrovimas būtų beveik 100%), bet ir turi didesnį carryoverį į kitas rungtis/pratimus/gyvenimiškas situacijas/instagramo laikus.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kodėl deadliftas?&lt;/strong&gt; Nes jei reikėtų pasirinkti vieną pratimą, geriausiai apsprendžiantį viso kūno pajėgumą, tai būtų šis veiksmas. Aišku Kaz’as turbūt švelniai ir politkorektiškai paprieštarautų minėtam teiginiui, tačiau jo favorite - 
+&lt;a href=&#34;https://www.youtube.com/watch?v=jyKYWqu8DOk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rąsto kėlime&lt;/a&gt; - limituojantis faktorius vis tik liks pečiai ir tricepsas. O deadlifte - visas posterior chainas (primityviai sakant - hamstringai (ir hamstringai yra ne vien kojos dvigalviai - čia dar vienas dalykas lost in translation kaip ir deadlift) + sėdmenys + nugaros apačia), kuris, savo ruožtu, ne tik užima didesnį raumenų plotą kūne procentaliai, bet ir turi didesnį &lt;em&gt;carryoverį&lt;/em&gt; į kitas rungtis/pratimus/gyvenimiškas situacijas/instagramo laikus.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Kodėl man reikalingas blogas?&lt;/strong&gt; Noriu išbandyti 
-&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt; paketą su R. O jei rimtai - tiesiog noriu vietos, kurioje galėčiau padėti savo sąmonės srautą, avantiūras ir keistus dalykus, kuriuos darau laisvu laiku, nefloodinant bendro srauto socialiniuose tinkluose, nes ir taip nuo daugelio saviraiškos jau galima vemti. Taip pat keli draugai karts nuo karto užklausdavo, kodėl blogo nerašau. Iki šiol laikiausi nuomonės kaip ir vienas mano pažįstamas profesorius. Užklaustas, kodėl nerašo blogo, juk tiek daug naudingos informacijos turi sukaupęs, atsakė - &amp;ldquo;O kam? Aš naujo darbo neieškau&amp;rdquo;. Natūralu, jog žmogaus nuomonė gali keistis, bet aš darbo vis tiek neieškau.&lt;/p&gt;
-&lt;p&gt;Iš pradžių galvojau rašyti tik apie sportą (juk deadlift.lt!), tačiau nusprendžiau viską sukišti po vienu stogu - IT, programavimą, jėgos sportą, netgi žaidimus. Kas norės atsirinks pagal tagus, o kitiems - ačiū už dėmesį.&lt;/p&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt; paketą su R. O jei rimtai - tiesiog ie6kojau vietos, kurioje galėčiau padėti savo sąmonės srautą, avantiūras ir keistus dalykus, kuriuos darau laisvu laiku, &lt;em&gt;nefloodinant&lt;/em&gt; bendro srauto socialiniuose tinkluose, nes ir taip nuo daugelio saviraiškos jau galima vemti. Taip pat keli draugai karts nuo karto užklausdavo, kodėl blogo nerašau. Iki šiol laikiausi nuomonės kaip ir vienas mano žinomas profesorius: paklaustas, kodėl nerašo blogo, juk tiek daug naudingos informacijos turi sukaupęs, atsakė - &amp;ldquo;O kam? Aš naujo darbo neieškau&amp;rdquo;. Natūralu, jog žmogaus nuomonė gali keistis, bet aš darbo irgi neieškau.&lt;/p&gt;
+&lt;p&gt;Iš pradžių galvojau rašyti tik apie sportą (juk deadlift.lt!), tačiau nusprendžiau viską sukišti po vienu stogu - IT, programavimą, jėgos sportą, netgi žaidimus. Kas norės atsirinks pagal tagus, paveiksliukus ir aprašymus, o kitiems - ačiū už dėmesį ir geros dienos.&lt;/p&gt;
 </description>
     </item>
     
