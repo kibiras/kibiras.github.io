@@ -5,7 +5,7 @@
     <link>https://deadlift.lt/tag/r/</link>
       <atom:link href="https://deadlift.lt/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras 2020 ©</copyright><lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://deadlift.lt/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
@@ -65,7 +65,7 @@ git push -u origin master
 &lt;ul&gt;
 &lt;li&gt;Sugeneruojame public turinį R aplinkoje:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown:::serve_site()
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::build_site()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Sukuriame tuščią failą &lt;strong&gt;.nojekyll&lt;/strong&gt;, kad github&amp;rsquo;as žinotų, jog tai ne jekyll template&amp;rsquo;as&lt;/li&gt;
@@ -78,7 +78,7 @@ git push origin master
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Viskas!&lt;/strong&gt; Savo svetainės turinį dabar turėtumėte pasiekti &lt;strong&gt;https://jūsų_vardas.github.io/&lt;/strong&gt; adresu. Jeigu kur nors strigsite - klauskite arba &lt;strong&gt;
 &lt;a href=&#34;https://en.wikipedia.org/wiki/RTFM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RTFM&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &amp;ldquo;Powered by the Academic theme for Hugo.&amp;rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - respect&amp;rsquo;as Hugo ir Academic temos kūrėjams.&lt;/p&gt;
+&lt;p&gt;Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &amp;ldquo;Powered by the Academic theme for Hugo.&amp;rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - pagarba Hugo ir Academic temos kūrėjams.&lt;/p&gt;
 </description>
     </item>
     
