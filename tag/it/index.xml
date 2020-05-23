@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT | DEADLIFT.LT</title>
-    <link>/tag/it/</link>
-      <atom:link href="/tag/it/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://deadlift.lt/tag/it/</link>
+      <atom:link href="https://deadlift.lt/tag/it/index.xml" rel="self" type="application/rss+xml" />
     <description>IT</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras 2020 ©</copyright><lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://deadlift.lt/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>IT</title>
-      <link>/tag/it/</link>
+      <link>https://deadlift.lt/tag/it/</link>
     </image>
     
     <item>
       <title>[LT] Blogink su R</title>
-      <link>/post/lt-blogink-su-r/</link>
+      <link>https://deadlift.lt/post/lt-blogink-su-r/</link>
       <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/lt-blogink-su-r/</guid>
+      <guid>https://deadlift.lt/post/lt-blogink-su-r/</guid>
       <description>&lt;p&gt;R netinkamas darbui su Big Data, administravimui, mašininio mokymo algoritmams produkcijoje, back-end&amp;rsquo;ui, produkcinio lygio web aplikacijoms. Todėl lieka tik patvirtinti faktą, kad su R pagalba negalima sukurti asmeninio blogo. Jei visais šiais dalykais netikite, skaitykite toliau - papasakosiu apie tai, kaip pasigaminti asmeninę svetainę naudojant tik R sintaksę, turėti pilną sveitainės kontrolę, HTTPS, hostingą, versijavimą ir už tai nemokėti nė cento.&lt;/p&gt;
 &lt;p&gt;Kurti HTTP dokumentus su R galima jau seniai - ačiū 
 &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rmarkdown&lt;/a&gt;. Tačiau prieš daugiau nei du metus pasirodė labai stiprus rmarkdown paturbinimas, leidžiantis R vartotojams būti ir Web developeriais - 
@@ -84,18 +84,18 @@ git push origin master
     
     <item>
       <title>R in Action</title>
-      <link>/project/reducation/</link>
+      <link>https://deadlift.lt/project/reducation/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/project/reducation/</guid>
+      <guid>https://deadlift.lt/project/reducation/</guid>
       <description>&lt;p&gt;Sometimes we go back to school and talk about Big Data including big data processing and monitoring. From my side, I always promote R programming language and powerful things you can do with R in a simple way.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Racing cars controlled by mind</title>
-      <link>/project/bs2019/</link>
+      <link>https://deadlift.lt/project/bs2019/</link>
       <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/project/bs2019/</guid>
+      <guid>https://deadlift.lt/project/bs2019/</guid>
       <description>&lt;p&gt;This time R served as a backend for user registration, controlling car parameters and front end page. The 
 &lt;a href=&#34;https://www.rplumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;plumber&lt;/a&gt; package made the development really easy (that&amp;rsquo;s what plumbers do).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;plumber.png&#34; alt=&#34;REST API build with R&#34;&gt;&lt;/p&gt;
@@ -106,9 +106,9 @@ git push origin master
     
     <item>
       <title>Augmented reality pool table</title>
-      <link>/project/bs2018/</link>
+      <link>https://deadlift.lt/project/bs2018/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/project/bs2018/</guid>
+      <guid>https://deadlift.lt/project/bs2018/</guid>
       <description>&lt;p&gt;Can you draw a pool table and make some real-time dashboards? &amp;ldquo;Sure I can.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;The whole project was a huge team effort! However, the interesting part for me was creating real-time visualizations from a data stream. I can tell you a secret - it&amp;rsquo;s the reactivePoll function in shiny server. How to draw a table, some balls and a path? The ggplot2 comes to the rescue with just a few lines of code.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;pool.png&#34; alt=&#34;Pool table visualization&#34;&gt;&lt;/p&gt;
@@ -119,9 +119,9 @@ git push origin master
     
     <item>
       <title>Master Thesis</title>
-      <link>/project/mastersproject/</link>
+      <link>https://deadlift.lt/project/mastersproject/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>/project/mastersproject/</guid>
+      <guid>https://deadlift.lt/project/mastersproject/</guid>
       <description>&lt;p&gt;It was a great honor to receive an award from Vytautas Janilionis in the National Prof. Jonas Matulionis mathematics competition back in 2007. Who could have thought that after a decade I will have this person as a supervisor for my Master&amp;rsquo;s Project in Data Science and I will do the last presentation in the auditorium named under J. Matulionis name. Being the first test rabbits in Vilnius group turned out just fine!&lt;/p&gt;
 </description>
     </item>

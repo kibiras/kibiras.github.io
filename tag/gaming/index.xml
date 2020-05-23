@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gaming | DEADLIFT.LT</title>
-    <link>/tag/gaming/</link>
-      <atom:link href="/tag/gaming/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://deadlift.lt/tag/gaming/</link>
+      <atom:link href="https://deadlift.lt/tag/gaming/index.xml" rel="self" type="application/rss+xml" />
     <description>gaming</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras 2020 ©</copyright><lastBuildDate>Tue, 27 Apr 2010 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://deadlift.lt/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>gaming</title>
-      <link>/tag/gaming/</link>
+      <link>https://deadlift.lt/tag/gaming/</link>
     </image>
     
     <item>
       <title>Memories from CS 1.6</title>
-      <link>/project/gaming/</link>
+      <link>https://deadlift.lt/project/gaming/</link>
       <pubDate>Tue, 27 Apr 2010 00:00:00 +0000</pubDate>
-      <guid>/project/gaming/</guid>
+      <guid>https://deadlift.lt/project/gaming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MovieNations Rave On!</title>
-      <link>/project/movienations/</link>
+      <link>https://deadlift.lt/project/movienations/</link>
       <pubDate>Tue, 27 Apr 2010 00:00:00 +0000</pubDate>
-      <guid>/project/movienations/</guid>
+      <guid>https://deadlift.lt/project/movienations/</guid>
       <description>&lt;p&gt;During my gaming times I was featured in Counter-Strike movie for 
 &lt;a href=&#34;https://movienations.com/en/movie/2956&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MovieNations&lt;/a&gt; contest.&lt;/p&gt;
 &lt;p&gt;During the old times the movie went viral as has nearly 200k views (not including re-uploads).&lt;/p&gt;

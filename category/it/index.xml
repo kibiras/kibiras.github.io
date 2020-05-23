@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT | DEADLIFT.LT</title>
-    <link>/category/it/</link>
-      <atom:link href="/category/it/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://deadlift.lt/category/it/</link>
+      <atom:link href="https://deadlift.lt/category/it/index.xml" rel="self" type="application/rss+xml" />
     <description>IT</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>kibiras 2020 ©</copyright><lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://deadlift.lt/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>IT</title>
-      <link>/category/it/</link>
+      <link>https://deadlift.lt/category/it/</link>
     </image>
     
     <item>
       <title>[LT] Blogink su R</title>
-      <link>/post/lt-blogink-su-r/</link>
+      <link>https://deadlift.lt/post/lt-blogink-su-r/</link>
       <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/lt-blogink-su-r/</guid>
+      <guid>https://deadlift.lt/post/lt-blogink-su-r/</guid>
       <description>&lt;p&gt;R netinkamas darbui su Big Data, administravimui, mašininio mokymo algoritmams produkcijoje, back-end&amp;rsquo;ui, produkcinio lygio web aplikacijoms. Todėl lieka tik patvirtinti faktą, kad su R pagalba negalima sukurti asmeninio blogo. Jei visais šiais dalykais netikite, skaitykite toliau - papasakosiu apie tai, kaip pasigaminti asmeninę svetainę naudojant tik R sintaksę, turėti pilną sveitainės kontrolę, HTTPS, hostingą, versijavimą ir už tai nemokėti nė cento.&lt;/p&gt;
 &lt;p&gt;Kurti HTTP dokumentus su R galima jau seniai - ačiū 
 &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rmarkdown&lt;/a&gt;. Tačiau prieš daugiau nei du metus pasirodė labai stiprus rmarkdown paturbinimas, leidžiantis R vartotojams būti ir Web developeriais - 
