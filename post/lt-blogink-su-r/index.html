@@ -692,13 +692,13 @@ blogdown::install_hugo()
 <li>Užsiregistruojame 
 <a href="github.com">github.com</a></li>
 <li>Sukuriame repositoriją, kuriose laikysite kodą (<strong>private</strong>, vardas gali būti bet koks)</li>
-<li>Sukuriame repositoriją, kuriose laikysite viešai pasiekiamą svetainės turinį (<strong>public</strong>, vardas turi būti <strong><USERNAME>.github.io</strong>)</li>
+<li>Sukuriame repositoriją, kuriose laikysite viešai pasiekiamą svetainės turinį (<strong>public</strong>, vardas turi būti <strong>jūsų_profilis.github.io</strong>)</li>
 <li>Sudedame projekto turinį į kodo repositoriją</li>
-<li>Konfiguracijoje <strong>config.toml</strong> pakeičiame: baseurl = &ldquo;https://<USERNAME>.github.io/&rdquo;</li>
+<li>Konfiguracijoje <strong>config.toml</strong> pakeičiame: baseurl = &ldquo;https://jūsų_profilis.github.io/&rdquo;</li>
 <li>Ištriname public direktorijos turinį</li>
 <li>Įdedame public direktoriją kaip submodulį:</li>
 </ul>
-<pre><code>git submodule add -f -b master https://github.com/&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
+<pre><code>git submodule add -f -b master https://github.com/jūsų_profilis/jūsų_profilis.github.io.git public
 </code></pre>
 <ul>
 <li>Atnaujiname kodo dalies github repositoriją:</li>
@@ -721,9 +721,9 @@ git add .
 git commit -m &quot;Build website&quot;
 git push origin master
 </code></pre>
-<p><strong>Viskas!</strong> Savo svetainės turinį dabar turėtumėte pasiekti <strong>https://jūsų_vardas.github.io/</strong> adresu. Jeigu kur nors strigsite - klauskite arba <strong>
+<p><strong>Viskas!</strong> Savo svetainės turinį dabar turėtumėte pasiekti <strong>https://jūsų_profilis.github.io/</strong> adresu. Jeigu kur nors strigsite - klauskite arba <strong>
 <a href="https://en.wikipedia.org/wiki/RTFM" target="_blank" rel="noopener">RTFM</a></strong>.</p>
-<p>Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &ldquo;Powered by the Academic theme for Hugo.&rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - pagarba Hugo ir Academic temos kūrėjams.</p>
+<p>Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &ldquo;Powered by the Academic theme for Hugo.&rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - pagarba Hugo ir Academic temos kūrėjams. Dabar galite eiti pirkti domeną ir pririšti jį prie ką tik susikurto github puslapio - nebus jokių reklamų, o SSL sertifikatą taip pat sugeneruos pats GitHub&rsquo;as.</p>
 
     </div>
 

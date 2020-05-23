@@ -47,13 +47,13 @@ blogdown::install_hugo()
 &lt;li&gt;Užsiregistruojame 
 &lt;a href=&#34;github.com&#34;&gt;github.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Sukuriame repositoriją, kuriose laikysite kodą (&lt;strong&gt;private&lt;/strong&gt;, vardas gali būti bet koks)&lt;/li&gt;
-&lt;li&gt;Sukuriame repositoriją, kuriose laikysite viešai pasiekiamą svetainės turinį (&lt;strong&gt;public&lt;/strong&gt;, vardas turi būti &lt;strong&gt;&lt;USERNAME&gt;.github.io&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Sukuriame repositoriją, kuriose laikysite viešai pasiekiamą svetainės turinį (&lt;strong&gt;public&lt;/strong&gt;, vardas turi būti &lt;strong&gt;jūsų_profilis.github.io&lt;/strong&gt;)&lt;/li&gt;
 &lt;li&gt;Sudedame projekto turinį į kodo repositoriją&lt;/li&gt;
-&lt;li&gt;Konfiguracijoje &lt;strong&gt;config.toml&lt;/strong&gt; pakeičiame: baseurl = &amp;ldquo;https://&lt;USERNAME&gt;.github.io/&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Konfiguracijoje &lt;strong&gt;config.toml&lt;/strong&gt; pakeičiame: baseurl = &amp;ldquo;https://jūsų_profilis.github.io/&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Ištriname public direktorijos turinį&lt;/li&gt;
 &lt;li&gt;Įdedame public direktoriją kaip submodulį:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;git submodule add -f -b master https://github.com/&amp;lt;USERNAME&amp;gt;/&amp;lt;USERNAME&amp;gt;.github.io.git public
+&lt;pre&gt;&lt;code&gt;git submodule add -f -b master https://github.com/jūsų_profilis/jūsų_profilis.github.io.git public
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Atnaujiname kodo dalies github repositoriją:&lt;/li&gt;
@@ -76,9 +76,9 @@ git add .
 git commit -m &amp;quot;Build website&amp;quot;
 git push origin master
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Viskas!&lt;/strong&gt; Savo svetainės turinį dabar turėtumėte pasiekti &lt;strong&gt;https://jūsų_vardas.github.io/&lt;/strong&gt; adresu. Jeigu kur nors strigsite - klauskite arba &lt;strong&gt;
+&lt;p&gt;&lt;strong&gt;Viskas!&lt;/strong&gt; Savo svetainės turinį dabar turėtumėte pasiekti &lt;strong&gt;https://jūsų_profilis.github.io/&lt;/strong&gt; adresu. Jeigu kur nors strigsite - klauskite arba &lt;strong&gt;
 &lt;a href=&#34;https://en.wikipedia.org/wiki/RTFM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RTFM&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &amp;ldquo;Powered by the Academic theme for Hugo.&amp;rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - pagarba Hugo ir Academic temos kūrėjams.&lt;/p&gt;
+&lt;p&gt;Gal kai kuriems kils klausimų, kaip nusiimti apačioje esantį &amp;ldquo;Powered by the Academic theme for Hugo.&amp;rdquo; užrašą? Taip, tai įmanoma nesunkiai padaryti šiek tiek pagooglinus. Aš asmeniškai jį nutariau palikti - pagarba Hugo ir Academic temos kūrėjams. Dabar galite eiti pirkti domeną ir pririšti jį prie ką tik susikurto github puslapio - nebus jokių reklamų, o SSL sertifikatą taip pat sugeneruos pats GitHub&amp;rsquo;as.&lt;/p&gt;
 </description>
     </item>
     
