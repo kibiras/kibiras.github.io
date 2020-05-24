@@ -48,7 +48,7 @@ blogdown::install_hugo()
 &lt;a href=&#34;github.com&#34;&gt;github.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Sukuriame repositoriją, kuriose laikysite kodą (&lt;strong&gt;private&lt;/strong&gt;, vardas gali būti bet koks)&lt;/li&gt;
 &lt;li&gt;Sukuriame repositoriją, kuriose laikysite viešai pasiekiamą svetainės turinį (&lt;strong&gt;public&lt;/strong&gt;, vardas turi būti &lt;strong&gt;jūsų_profilis.github.io&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Sudedame projekto turinį į kodo repositoriją&lt;/li&gt;
+&lt;li&gt;Atsiklonuojame kodo repositoriją ir sudedame projekto turinį į ją lokaliai&lt;/li&gt;
 &lt;li&gt;Konfiguracijoje &lt;strong&gt;config.toml&lt;/strong&gt; pakeičiame: baseurl = &amp;ldquo;https://jūsų_profilis.github.io/&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Ištriname public direktorijos turinį&lt;/li&gt;
 &lt;li&gt;Įdedame public direktoriją kaip submodulį:&lt;/li&gt;
