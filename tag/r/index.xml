@@ -83,16 +83,26 @@ git push origin master
     </item>
     
     <item>
-      <title>R in Action</title>
+      <title>External lectures</title>
       <link>https://deadlift.lt/project/reducation/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://deadlift.lt/project/reducation/</guid>
       <description>&lt;p&gt;Sometimes we go back to school and talk about Big Data including big data processing and monitoring.&lt;/p&gt;
+&lt;p&gt;Usually I cover these topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Big data processing in big organization&lt;/li&gt;
+&lt;li&gt;Monitoring solutions&lt;/li&gt;
+&lt;li&gt;Functional programming with R&lt;/li&gt;
+&lt;li&gt;Tidyverse approach&lt;/li&gt;
+&lt;li&gt;Web applications with shiny&lt;/li&gt;
+&lt;li&gt;Building REST API with R&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Target audience - Data Science students in Vilnius University and Kaunas University of Technology.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Racing cars controlled by mind</title>
+      <title>Racing cars controlled by mind power</title>
       <link>https://deadlift.lt/project/bs2019/</link>
       <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://deadlift.lt/project/bs2019/</guid>
@@ -123,6 +133,7 @@ git push origin master
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://deadlift.lt/project/mastersproject/</guid>
       <description>&lt;p&gt;It was a great honor to receive an award from Vytautas Janilionis in the National Prof. Jonas Matulionis mathematics competition back in 2007. Who could have thought that after a decade I will have this person as a supervisor for my Master&amp;rsquo;s Project in Data Science and I will do the last presentation in the auditorium named under J. Matulionis name. Being the first test rabbits in Vilnius group turned out just fine!&lt;/p&gt;
+&lt;p&gt;My Master&amp;rsquo;s Thesis was about customer review classification in e-commerce sector. I have used deep learning approach in combination with conventional NLP methods and implemented web service for real-time customer review classification.&lt;/p&gt;
 </description>
     </item>
     
