@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kęstutis Daugėla | DEADLIFT.LT</title>
-    <link>https://deadlift.lt/author/kestutis-daugela/</link>
-      <atom:link href="https://deadlift.lt/author/kestutis-daugela/index.xml" rel="self" type="application/rss+xml" />
+    <link>/author/kestutis-daugela/</link>
+      <atom:link href="/author/kestutis-daugela/index.xml" rel="self" type="application/rss+xml" />
     <description>Kęstutis Daugėla</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright>
     <image>
-      <url>https://deadlift.lt/author/kestutis-daugela/avatar_hua1e6fefaf8b78f0d9fbfc8d5b5fbbb85_231469_270x270_fill_lanczos_center_2.png</url>
+      <url>/author/kestutis-daugela/avatar_hua1e6fefaf8b78f0d9fbfc8d5b5fbbb85_231469_270x270_fill_lanczos_center_2.png</url>
       <title>Kęstutis Daugėla</title>
-      <link>https://deadlift.lt/author/kestutis-daugela/</link>
+      <link>/author/kestutis-daugela/</link>
     </image>
     
   </channel>
