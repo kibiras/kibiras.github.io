@@ -5,12 +5,83 @@
     <link>https://deadlift.lt/post/</link>
       <atom:link href="https://deadlift.lt/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://deadlift.lt/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://deadlift.lt/post/</link>
     </image>
+    
+    <item>
+      <title>[EN] Dog monitoring solution</title>
+      <link>https://deadlift.lt/post/en-dog-monitoring-solution/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deadlift.lt/post/en-dog-monitoring-solution/</guid>
+      <description>&lt;p&gt;Yeah, I have a dog. A really lovely and fun one named Loki, but sometimes he drives me and my girlfriend crazy. The background of this story is following: neighbours started to complain about some dog noises during the day. Of couse I had faith in my dog and knew that although he is very noisy sometimes, he wouldn&amp;rsquo;t do that. And I was right - one of my neighbours recently got a young dog and he did all that mess. However, I wanted to check how our dog is performing in terms of noise levels when we are out, so I have implemented a monitoring approach to test that and answer this question in a data-driven manner.&lt;/p&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_loki.png&#34; width=&#34;70%;&#34;&gt; 
+&lt;p&gt;So, I want to track sound level during the day, what should I do? At first I tried recording audio and seeing the soundwave graph after the day - the results were as I expected: some random woofs during the day, several woofs during the lunch and around 5 PM. It&amp;rsquo;s good for one-time checks, but I&amp;rsquo;m not particularly interested how &lt;em&gt;woofs&lt;/em&gt; sound - I just want to know when the &lt;em&gt;woofing&lt;/em&gt; occured. Moreover, audio recordings are very space consuming. Ideally, I want just to measure decibels and write the output somewhere.&lt;/p&gt;
+&lt;p&gt;There is an open source library written in python and called 
+&lt;a href=&#34;https://pypi.org/project/soundmeter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;soundmeter&lt;/a&gt;. It&amp;rsquo;s a really simple command line tool, where you can set the frequency along with other parameters and get the output in real time - basically all I needed. Since this data won&amp;rsquo;t take much space, I simply wrote the output to plain text file (of couse I could use some streaming technologies e.g. Apache Kafka, but it would be like killing a fly with a bazooka). The setup is fairly easy - just need to install soundmeter via pip tool:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install soundmeter 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_loki1.png&#34; width=&#34;50%;&#34;&gt; 
+&lt;p&gt;Then I put my microphone next to my buddy&amp;rsquo;s cage (yeah, we leave our dog in cage for his own safety). Since he is in the same place during the whole day, it&amp;rsquo;s really convenient from the monitoring and safety perspective. I wrapped this command line application in bash script for easier execution - all I need to do is to run this script and leave my pc on:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/sh
+soundmeter --segment 0.5 --log /dev/stdout 2&amp;gt;/dev/null | unbuffer -p perl -p -e &#39;s/\s*(\d+)\s+(.{19})(.*)/&amp;quot;$2,&amp;quot;. 20*log($1)/e&#39; &amp;gt;&amp;gt; `date +&amp;quot;%m-%d-%Y&amp;quot;`_loki.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I&amp;rsquo;ve been tracking my dog&amp;rsquo;s sound level for several months during the work days and came up with some pretty good amount of data. Since the output is in separate files, let&amp;rsquo;s map all these files to read_csv function (yey, some functional programming finally):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;filenames &amp;lt;- list.files(&amp;quot;data/&amp;quot;, full.names = TRUE)
+data &amp;lt;- map_df(filenames, function(f){
+  read_csv(f, col_names = c(&amp;quot;time&amp;quot;, &amp;quot;db&amp;quot;)) %&amp;gt;%
+    na.omit()
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_loki2.png&#34; width=&#34;50%;&#34;&gt; 
+&lt;p&gt;The microphone is not calibrated and the amount of decibels does not really reflect the reality, but it&amp;rsquo;s good for identifying the spikes (woofing periods or just making some noice in the cage). In order to visualize that, lets plot a histogram and you see what I&amp;rsquo;m talking about:&lt;/p&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_hist.png&#34; width=&#34;70%;&#34;&gt;
+&lt;p&gt;From histogram it&amp;rsquo;s really easy to identify two clusters - resting and messing around (barking) time. I&amp;rsquo;ll show you just a few lines of R code, because it&amp;rsquo;s really self-explanatory (R code in tidyverse is basically a short story about the data journey). Although the threshold of 100 is subjective, I does the trick for this purpose. I also made my dog to bark to see what level is reached and it proved my hypothesis as well and it&amp;rsquo;s way above 100 when the microphone is near his head.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;data &amp;lt;- data %&amp;gt;%
+  mutate(day = weekdays(time)) %&amp;gt;%
+  filter(!day %in% c(&amp;quot;Sunday&amp;quot;, &amp;quot;Saturday&amp;quot;) &amp;amp; hour(time) &amp;gt;= 9 &amp;amp; hour(time) &amp;lt; 18) %&amp;gt;%
+  mutate(status = ifelse(db &amp;gt; 100, &amp;quot;Barking&amp;quot;, &amp;quot;Resting&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let&amp;rsquo;s plot barking patterns now. From there, we can already identify data quality issues - probably I have turned on monitoring script when I was at home, this is why some days in November looked like a really noisy day from a dog&amp;rsquo;s perspective (plotting data really lets you to see the big picture).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;data %&amp;gt;%
+  filter(status == &amp;quot;Barking&amp;quot;) %&amp;gt;%
+  ggplot() +
+    geom_point(aes(time, db, color = status), size = 0.1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_bark.png&#34; width=&#34;80%;&#34;&gt;
+&lt;p&gt;Let&amp;rsquo;s filter out these days and calculate barking percentage:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;data_clean %&amp;gt;%
+  group_by(status) %&amp;gt;%
+  summarise(percentage = round(n()/nrow(data_clean) * 100, 2)) %&amp;gt;%
+  kable()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The numbers are similar to what I have expected - he is really quiet when waiting for us to come back from work. Only &lt;strong&gt;0.24%&lt;/strong&gt; of the time he does some noises.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;status&lt;/th&gt;
+&lt;th&gt;percentage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Barking&lt;/td&gt;
+&lt;td&gt;0.24&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Resting&lt;/td&gt;
+&lt;td&gt;99.76&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_loki3.png&#34; width=&#34;50%;&#34;&gt; 
+&lt;p&gt;To see how his ordinary day looks like, I have plotted a random instance from his life. At noon he probably smelled some food and did a few &lt;em&gt;woofs&lt;/em&gt;, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxious waiting for his masters.&lt;/p&gt;
+&lt;img src=&#34;https://deadlift.lt/img/dog_day.png&#34; width=&#34;90%;&#34;&gt;
+</description>
+    </item>
     
     <item>
       <title>[LT] Blogink su R</title>
@@ -156,7 +227,7 @@ git push origin master
       <guid>https://deadlift.lt/post/kodel-deadlift-lt/</guid>
       <description>&lt;p&gt;&lt;strong&gt;“There is no reason to be alive if you can&amp;rsquo;t do deadlift”&lt;/strong&gt; - tarė Jón Páll Sigmarsson, 
 &lt;a href=&#34;https://www.youtube.com/watch?v=ZWUcHKAj_tc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;atkėlęs du didžiulius vėžimo ratus, laikydamas juos už keturkampio formos ašies to meto galiūnų pirmenybėse&lt;/a&gt;. Tiesa, ne ką ten patraukė, o atsistojo iš ketvirtinio pritūpimo pozicijos. Ne kiek laikydamasis, kiek prisirišęs. Ne tokį jau ir solidų atstumą. Ir ne taip jau lengvai pavyko išleisti žodžius iš burnos. Bet šio 
-&lt;a href=&#34;https://www.youtube.com/watch?v=I1Hx7GZByxk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;į eskimą panašaus vikingo&lt;/a&gt; sugebėjimas vienu sakiniu paaiškinti bendro fizinio pasirengimo teoriją, laikant 455 kilogramus rankose, tikrai vertas didžiulės pagarbos.&lt;/p&gt;
+&lt;a href=&#34;https://www.youtube.com/watch?v=I1Hx7GZByxk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;į eskimą panašaus vikingo&lt;/a&gt; sugebėjimas vienu sakiniu paaiškinti bendro fizinio pasirengimo esmę, laikant 455 kilogramus rankose, tikrai vertas didžiulės pagarbos.&lt;/p&gt;
 &lt;img src=&#34;https://deadlift.lt/img/deadliftpal.png&#34; width=&#34;50%;&#34;&gt;
 &lt;p&gt;Iš esmės toks ir bus šis blogas - nestruktūruotas, vietomis nusileidžiantis iki tik man įdomių detalių, nenorminė leksika, persunkta anglišku treniravimo ir IT žargonu, su velniškai ilgais sakiniais, kuriuose yra be galo daug būdų aplinkybių, išskirtų kableliais, kaip kad ir šis.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Kodėl deadliftas?&lt;/strong&gt; Nes jei reikėtų pasirinkti vieną pratimą, geriausiai apsprendžiantį viso kūno pajėgumą, tai būtų šis veiksmas. Aišku Kaz’as turbūt švelniai ir politkorektiškai paprieštarautų minėtam teiginiui, tačiau jo favorite - 
