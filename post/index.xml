@@ -37,9 +37,9 @@ data &amp;lt;- map_df(filenames, function(f){
 })
 &lt;/code&gt;&lt;/pre&gt;
 &lt;img src=&#34;https://deadlift.lt/img/dog_loki2.png&#34; width=&#34;50%;&#34;&gt; 
-&lt;p&gt;The microphone is not calibrated and the amount of decibels does not really reflect the reality, but it&amp;rsquo;s good for identifying the spikes (woofing periods or just making some noice in the cage). In order to visualize that, lets plot a histogram and you see what I&amp;rsquo;m talking about:&lt;/p&gt;
+&lt;p&gt;The microphone is not calibrated and the amount of decibels does not really reflect the reality, but it&amp;rsquo;s good for identifying the spikes (woofing periods or just making some noice in the cage). In order to visualize that, lets plot a histogram and you will see what I&amp;rsquo;m talking about:&lt;/p&gt;
 &lt;img src=&#34;https://deadlift.lt/img/dog_hist.png&#34; width=&#34;70%;&#34;&gt;
-&lt;p&gt;From histogram it&amp;rsquo;s really easy to identify two clusters - resting and messing around (barking) time. I&amp;rsquo;ll show you just a few lines of R code, because it&amp;rsquo;s really self-explanatory (R code in tidyverse is basically a short story about the data journey). Although the threshold of 100 is subjective, I does the trick for this purpose. I also made my dog to bark to see what level is reached and it proved my hypothesis as well and it&amp;rsquo;s way above 100 when the microphone is near his head.&lt;/p&gt;
+&lt;p&gt;From histogram it&amp;rsquo;s really easy to identify two clusters - resting and messing around (barking) time. I&amp;rsquo;ll show you just a few lines of R code, because it&amp;rsquo;s really self-explanatory (R code in tidyverse is basically a short story about the data journey). Although the threshold of 100 is subjective, I does the trick for this purpose. I also made my dog to bark in order to see what level is reached and it proved my hypothesis as well - it&amp;rsquo;s way above 100 when the microphone is near his head.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;data &amp;lt;- data %&amp;gt;%
   mutate(day = weekdays(time)) %&amp;gt;%
   filter(!day %in% c(&amp;quot;Sunday&amp;quot;, &amp;quot;Saturday&amp;quot;) &amp;amp; hour(time) &amp;gt;= 9 &amp;amp; hour(time) &amp;lt; 18) %&amp;gt;%
@@ -58,7 +58,7 @@ data &amp;lt;- map_df(filenames, function(f){
   summarise(percentage = round(n()/nrow(data_clean) * 100, 2)) %&amp;gt;%
   kable()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The numbers are similar to what I have expected - he is really quiet when waiting for us to come back from work. Only &lt;strong&gt;0.24%&lt;/strong&gt; of the time he does some noises.&lt;/p&gt;
+&lt;p&gt;The numbers are similar to what I have expected - he is really quiet when he is waiting for us to come back from work. Only &lt;strong&gt;0.24%&lt;/strong&gt; of the time he is noisy.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -78,7 +78,7 @@ data &amp;lt;- map_df(filenames, function(f){
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;img src=&#34;https://deadlift.lt/img/dog_loki3.png&#34; width=&#34;50%;&#34;&gt; 
-&lt;p&gt;To see how his ordinary day looks like, I have plotted a random instance from his life. At noon he probably smelled some food and did a few &lt;em&gt;woofs&lt;/em&gt;, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxious waiting for his masters.&lt;/p&gt;
+&lt;p&gt;To see how his ordinary day looks like, I have plotted a random instance from his life. At noon he probably smelled some food and did few &lt;em&gt;woofs&lt;/em&gt;, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxious waiting for his masters.&lt;/p&gt;
 &lt;img src=&#34;https://deadlift.lt/img/dog_day.png&#34; width=&#34;90%;&#34;&gt;
 </description>
     </item>
