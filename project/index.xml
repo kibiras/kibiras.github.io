@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | DEADLIFT.LT</title>
-    <link>/project/</link>
-      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://deadlift.lt/project/</link>
+      <atom:link href="https://deadlift.lt/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://deadlift.lt/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
-      <link>/project/</link>
+      <link>https://deadlift.lt/project/</link>
     </image>
     
     <item>
       <title>External lectures</title>
-      <link>/project/reducation/</link>
+      <link>https://deadlift.lt/project/reducation/</link>
       <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/project/reducation/</guid>
+      <guid>https://deadlift.lt/project/reducation/</guid>
       <description>&lt;p&gt;Sometimes we go back to school and talk about Big Data including big data processing and monitoring.&lt;/p&gt;
 &lt;p&gt;Usually I cover these topics:&lt;/p&gt;
 &lt;ul&gt;
@@ -33,9 +33,9 @@
     
     <item>
       <title>Racing cars controlled by mind power</title>
-      <link>/project/bs2019/</link>
+      <link>https://deadlift.lt/project/bs2019/</link>
       <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/project/bs2019/</guid>
+      <guid>https://deadlift.lt/project/bs2019/</guid>
       <description>&lt;p&gt;This time R served as a backend for user registration, controlling car parameters and front end page. The 
 &lt;a href=&#34;https://www.rplumber.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;plumber&lt;/a&gt; package made the development really easy (that&amp;rsquo;s what plumbers do).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;plumber.png&#34; alt=&#34;REST API build with R&#34;&gt;&lt;/p&gt;
@@ -46,9 +46,9 @@
     
     <item>
       <title>Augmented reality pool table</title>
-      <link>/project/bs2018/</link>
+      <link>https://deadlift.lt/project/bs2018/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/project/bs2018/</guid>
+      <guid>https://deadlift.lt/project/bs2018/</guid>
       <description>&lt;p&gt;Can you draw a pool table and make some real-time dashboards? &amp;ldquo;Sure I can.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;The whole project was a huge team effort! However, the interesting part for me was creating real-time visualizations from a data stream. I can tell you a secret - it&amp;rsquo;s the reactivePoll function in shiny server. How to draw a table, some balls and a path? The ggplot2 comes to the rescue with just a few lines of code.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;pool.png&#34; alt=&#34;Pool table visualization&#34;&gt;&lt;/p&gt;
@@ -59,9 +59,9 @@
     
     <item>
       <title>Lithuania&#39;s Strongest Man</title>
-      <link>/project/strongman/</link>
+      <link>https://deadlift.lt/project/strongman/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>/project/strongman/</guid>
+      <guid>https://deadlift.lt/project/strongman/</guid>
       <description>&lt;p&gt;During my stronman times I manage to qualify into Lithuania&amp;rsquo;s Strongest Man Finals two times. Some of the personal records I managed to do during that journey:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -81,9 +81,9 @@
     
     <item>
       <title>Master Thesis</title>
-      <link>/project/mastersproject/</link>
+      <link>https://deadlift.lt/project/mastersproject/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>/project/mastersproject/</guid>
+      <guid>https://deadlift.lt/project/mastersproject/</guid>
       <description>&lt;p&gt;It was a great honor to receive an award from Vytautas Janilionis in the National Prof. Jonas Matulionis mathematics competition back in 2007. Who could have thought that after a decade I will have this person as a supervisor for my Master&amp;rsquo;s Project in Data Science and I will do the last presentation in the auditorium named under J. Matulionis name. Being the first test rabbits in Vilnius group turned out just fine!&lt;/p&gt;
 &lt;p&gt;My Master&amp;rsquo;s Thesis was about customer review classification in e-commerce sector. I have used deep learning approach in combination with conventional NLP methods and implemented web service for real-time customer review classification.&lt;/p&gt;
 </description>
@@ -91,9 +91,9 @@
     
     <item>
       <title>Strength Clash 2018</title>
-      <link>/project/strengthclash/</link>
+      <link>https://deadlift.lt/project/strengthclash/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/strengthclash/</guid>
+      <guid>https://deadlift.lt/project/strengthclash/</guid>
       <description>&lt;p&gt;In this project I helped to organize an unusual strength competition for the 5th birthday of Urban Gym. Events were following:&lt;/p&gt;
 &lt;p&gt;Qualification (timecap 5min)&lt;/p&gt;
 &lt;ul&gt;
@@ -118,26 +118,26 @@
     
     <item>
       <title>VU powerlifting competitions</title>
-      <link>/project/vupowerlifting/</link>
+      <link>https://deadlift.lt/project/vupowerlifting/</link>
       <pubDate>Sat, 27 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>/project/vupowerlifting/</guid>
+      <guid>https://deadlift.lt/project/vupowerlifting/</guid>
       <description>&lt;p&gt;After I graduated from Vilnius University, I have continued to train at the best gym in Vilnius (VU Sport Center). Most of the people were interested in weightligting and kettlebell training. However, powerlifting became more and more popular within the community. Since I was training for IPF classics and it was cancelled due to unknown reasons, I decided to make our own competition in Vilnius University instead. We had a great team, find some sponsors and the idea became true.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Memories from CS 1.6</title>
-      <link>/project/gaming/</link>
+      <link>https://deadlift.lt/project/gaming/</link>
       <pubDate>Tue, 27 Apr 2010 00:00:00 +0000</pubDate>
-      <guid>/project/gaming/</guid>
+      <guid>https://deadlift.lt/project/gaming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MovieNations Rave On!</title>
-      <link>/project/movienations/</link>
+      <link>https://deadlift.lt/project/movienations/</link>
       <pubDate>Tue, 27 Apr 2010 00:00:00 +0000</pubDate>
-      <guid>/project/movienations/</guid>
+      <guid>https://deadlift.lt/project/movienations/</guid>
       <description>&lt;p&gt;During my gaming times I was featured in Counter-Strike movie for 
 &lt;a href=&#34;https://movienations.com/en/movie/2956&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MovieNations&lt;/a&gt; contest.&lt;/p&gt;
 &lt;p&gt;The movie went viral back in the days and had nearly 200k views (not including re-uploads).&lt;/p&gt;
