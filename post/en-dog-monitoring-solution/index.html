@@ -692,7 +692,7 @@
 <pre><code>pip install soundmeter 
 </code></pre>
 <img src="/img/dog_loki1.png" width="50%;"> 
-<p>Then I put my microphone next to my buddy&rsquo;s cage (yeah, we leave our dog in cage for his own safety). Since he is in the same place during the whole day, it&rsquo;s really convenient from the monitoring and safety perspective. I wrapped this command line application in bash script for easier execution - all I need to do is to run this script and leave my pc on:</p>
+<p>Then I put my microphone next to my buddy&rsquo;s cage (yeah, we leave our dog in a cage for his own safety). Since Loki is in the same place during the whole day, it&rsquo;s really convenient from the monitoring and safety perspective. I wrapped this command line application in bash script for easier execution - all I need to do is to run this script and leave my pc on:</p>
 <pre><code class="language-bash">#!/bin/sh
 soundmeter --segment 0.5 --log /dev/stdout 2&gt;/dev/null | unbuffer -p perl -p -e 's/\s*(\d+)\s+(.{19})(.*)/&quot;$2,&quot;. 20*log($1)/e' &gt;&gt; `date +&quot;%m-%d-%Y&quot;`_loki.log
 </code></pre>
@@ -706,7 +706,7 @@ data &lt;- map_df(filenames, function(f){
 <img src="/img/dog_loki2.png" width="50%;"> 
 <p>The microphone is not calibrated and the amount of decibels does not really reflect the reality, but it&rsquo;s good for identifying the spikes (woofing periods or just making some noice in the cage). In order to visualize that, lets plot a histogram and you will see what I&rsquo;m talking about:</p>
 <img src="/img/dog_hist.png" width="70%;">
-<p>From histogram it&rsquo;s really easy to identify two clusters - resting and messing around (barking) time. I&rsquo;ll show you just a few lines of R code, because it&rsquo;s really self-explanatory (R code in tidyverse is basically a short story about the data journey). Although the threshold of 100 is subjective, I does the trick for this purpose. I also made my dog to bark in order to see what level is reached and it proved my hypothesis as well - it&rsquo;s way above 100 when the microphone is near his head.</p>
+<p>From histogram it&rsquo;s really easy to identify two clusters - resting and messing around (barking) time. I&rsquo;ll show you just a few lines of R code, because it&rsquo;s really self-explanatory (R code in tidyverse is basically a short story about the data journey). Although the threshold of 100 is subjective, it does the trick for this purpose. I also made my dog to bark in order to see what level is reached and it proved my hypothesis as well - it&rsquo;s way above 100 when the microphone is near his head.</p>
 <pre><code>data &lt;- data %&gt;%
   mutate(day = weekdays(time)) %&gt;%
   filter(!day %in% c(&quot;Sunday&quot;, &quot;Saturday&quot;) &amp; hour(time) &gt;= 9 &amp; hour(time) &lt; 18) %&gt;%
@@ -725,7 +725,7 @@ data &lt;- map_df(filenames, function(f){
   summarise(percentage = round(n()/nrow(data_clean) * 100, 2)) %&gt;%
   kable()
 </code></pre>
-<p>The numbers are similar to what I have expected - he is really quiet when he is waiting for us to come back from work. Only <strong>0.24%</strong> of the time he is noisy.</p>
+<p>The numbers are similar to what I have expected - he is really quiet when he is waiting for us to come back from work. Only <strong>0.24%</strong> of the time Loki is a bad boy.</p>
 <table>
 <thead>
 <tr>
@@ -745,7 +745,7 @@ data &lt;- map_df(filenames, function(f){
 </tbody>
 </table>
 <img src="/img/dog_loki3.png" width="50%;"> 
-<p>To see how his ordinary day looks like, I have plotted a random instance from his life. At noon he probably smelled some food and did few <em>woofs</em>, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxious waiting for his masters.</p>
+<p>To see how his ordinary day looks like, I have plotted a random instance from Loki&rsquo;s life. At noon he probably smelled some food and did few <em>woofs</em>, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxious waiting for his masters.</p>
 <img src="/img/dog_day.png" width="90%;">
 
     </div>
