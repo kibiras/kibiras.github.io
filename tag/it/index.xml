@@ -78,7 +78,7 @@ data &amp;lt;- map_df(filenames, function(f){
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;img src=&#34;https://deadlift.lt/img/dog_loki3.png&#34; width=&#34;50%;&#34;&gt; 
-&lt;p&gt;To see how his ordinary day looks like, I have plotted a random instance from Loki&amp;rsquo;s life. At noon he probably smelled some food and did few &lt;em&gt;woofs&lt;/em&gt;, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxious waiting for his masters.&lt;/p&gt;
+&lt;p&gt;To see how his ordinary day looks like, I have plotted a random instance from Loki&amp;rsquo;s life. At noon he probably smelled some food and did few &lt;em&gt;woofs&lt;/em&gt;, decided to do some workout before 3 PM and heard some squirrels in the evening. Normally we come back from work at 6 PM, so we either entered the room or he was just anxiously waiting for his masters.&lt;/p&gt;
 &lt;img src=&#34;https://deadlift.lt/img/dog_day.png&#34; width=&#34;90%;&#34;&gt;
 </description>
     </item>
