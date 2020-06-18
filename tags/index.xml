@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | DEADLIFT.LT</title>
-    <link>https://deadlift.lt/tags/</link>
-      <atom:link href="https://deadlift.lt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://deadlift.lt/img/avatar.png</url>
+      <url>/img/avatar.png</url>
       <title>Tags</title>
-      <link>https://deadlift.lt/tags/</link>
+      <link>/tags/</link>
     </image>
     
   </channel>

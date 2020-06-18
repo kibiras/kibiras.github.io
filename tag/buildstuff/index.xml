@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BuildStuff | DEADLIFT.LT</title>
-    <link>https://deadlift.lt/tag/buildstuff/</link>
-      <atom:link href="https://deadlift.lt/tag/buildstuff/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/buildstuff/</link>
+      <atom:link href="/tag/buildstuff/index.xml" rel="self" type="application/rss+xml" />
     <description>BuildStuff</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://deadlift.lt/img/avatar.png</url>
+      <url>/img/avatar.png</url>
       <title>BuildStuff</title>
-      <link>https://deadlift.lt/tag/buildstuff/</link>
+      <link>/tag/buildstuff/</link>
     </image>
     
     <item>
       <title>Augmented reality pool table</title>
-      <link>https://deadlift.lt/project/bs2018/</link>
+      <link>/project/bs2018/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://deadlift.lt/project/bs2018/</guid>
+      <guid>/project/bs2018/</guid>
       <description>&lt;p&gt;Can you draw a pool table and make some real-time dashboards? &amp;ldquo;Sure I can.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;The whole project was a huge team effort! However, the interesting part for me was creating real-time visualizations from a data stream. I can tell you a secret - it&amp;rsquo;s the reactivePoll function in shiny server. How to draw a table, some balls and a path? The ggplot2 comes to the rescue with just a few lines of code.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;pool.png&#34; alt=&#34;Pool table visualization&#34;&gt;&lt;/p&gt;
