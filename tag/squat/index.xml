@@ -2,25 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>squat | DEADLIFT.LT</title>
-    <link>/tag/squat/</link>
-      <atom:link href="/tag/squat/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://deadlift.lt/tag/squat/</link>
+      <atom:link href="https://deadlift.lt/tag/squat/index.xml" rel="self" type="application/rss+xml" />
     <description>squat</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020 deadlift.lt ©</copyright><lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/avatar.png</url>
+      <url>https://deadlift.lt/img/avatar.png</url>
       <title>squat</title>
-      <link>/tag/squat/</link>
+      <link>https://deadlift.lt/tag/squat/</link>
     </image>
     
     <item>
-      <title>[EN] Squat everyday challange</title>
-      <link>/post/en-squat-everyday-challange/</link>
+      <title>[EN] Squat everyday challenge</title>
+      <link>https://deadlift.lt/post/en-squat-everyday-challenge/</link>
       <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/post/en-squat-everyday-challange/</guid>
+      <guid>https://deadlift.lt/post/en-squat-everyday-challenge/</guid>
       <description>&lt;p&gt;What is the best way to &lt;strong&gt;recover your body strength&lt;/strong&gt; after an extensive time of sitting, low activity period and moderate back pain? I don&amp;rsquo;t know, but I tried the damn hard one, which will put your body to it&amp;rsquo;s limits and mess up with your mind even more. Inspired by the 
 &lt;a href=&#34;https://www.youtube.com/watch?v=SWOm-1mIE6A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bulgarian Method&lt;/a&gt; I have squatted more than a month in a row. It may sound crazy, but it really makes sense: two of the major factors in any athletic training is specificity and overload. And Bulgarian methods nails both of them when it comes to weightlifting and powerlifting.&lt;/p&gt;
 &lt;p&gt;Firstly - a few disclaimers. I&amp;rsquo;m not a good squatter and my squat kind of sucks. My personal best in a competition is only 235 kilos. Comparing to a deadlift (285 kg), it&amp;rsquo;s quite a huge difference. However, I&amp;rsquo;ve been incorporating this method in my training before - the first time it helped me to reach my 200 kilos goal in 2013. The second time it was just for fun, when I had a lot of spare time being on the business trip in Sweden around 2016. In general, I haven&amp;rsquo;t chased huge squat numbers in my life since my body type is not that efficient for this lift. This approach became the norm especially when I was actively competing in strongman - squat events were really rare in these competitions. On the other hand, squat as an assistance exercise served a huge role for my training in general - I do squat variations almost every workout and they have tremendous carryover into strongman events such as yoke carry, atlas stones, core stabilization and the whole conditioning in general. That&amp;rsquo;s why I do not adjust my technique for the sake of a few kilograms on a squat and do squats in a narrow fashion, way below parallel.&lt;/p&gt;
-&lt;img src=&#34;/img/sq_paused.png&#34; width=&#34;70%;&#34;&gt; 
 &lt;p&gt;For the sake of the &lt;strong&gt;squat everyday quest&lt;/strong&gt;, I have decided to put some constrains in my training before I start:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I &lt;strong&gt;must&lt;/strong&gt; do squats &lt;strong&gt;everyday&lt;/strong&gt;&lt;/li&gt;
@@ -32,7 +31,7 @@
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/MNWthkj5o7A&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;What I have learned from this experience? Squat is still the king of the exercises. It does not hit your nervous system hard &lt;em&gt;(compared to the deadlifts)&lt;/em&gt;, so you can squat really often, even several times per day &lt;em&gt;(used to do that as well during my olympic weightlifting training).&lt;/em&gt; Your legs hurt, but they get used to it really quick - just in a few days or so. &lt;em&gt;E.g. on the third day I failed the second rep with 180 kg, but later on did 200 kilos for 3 reps, 210 kilos for 1 rep&lt;/em&gt; and so on. Your technique also has to be solid - in my case it&amp;rsquo;s not perfect, but rather comfortable. Squatting that often will put a good amount of stress on your joints and ligaments, so you would serve yourself a recipe for disaster in case your technique is not in tact. Moreover, I had a bad back due to extensive sitting and no training during the quarantine, but daily squatting worked like a charm and fixed all the problems for me.&lt;/p&gt;
 &lt;p&gt;Another good thing is that I also have collected some &lt;strong&gt;data&lt;/strong&gt; from my daily squatting. Knowing the fact that I love crunching data, I will definitely put it for some use. I have plotted the time for an ascending portion of my squat, so you can clearly see the improvement during the time with some setbacks (some heavy training led to poor results next day).&lt;/p&gt;
-&lt;img src=&#34;/img/sq_timeline.gif&#34; width=&#34;90%;&#34;&gt; 
+&lt;img src=&#34;https://deadlift.lt/img/sq_timeline.gif&#34; width=&#34;90%;&#34;&gt; 
 &lt;p&gt;These types of visualizations look really nice compared with the static ones and there&amp;rsquo;s a quick tip how to do them with just a few lines of code:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;p &amp;lt;- ggplot(sq, aes(Day, duration)) +
   geom_line(size = 2, linetype = 2) +
@@ -42,10 +41,10 @@ a &amp;lt;- p + transition_reveal(Day)
 animate(a, width = 1920, height = 600)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Another interesting question for me was whether getting up early in the morning is worth it. Normally I train around 7 PM, but in order to avoid people during quarantine &lt;em&gt;(and be alone in the gym)&lt;/em&gt; I usually did my workouts at 8 AM or 10 PM. Since I have collected squat speed data from both AM (n = 14) and PM (n = 17) sessions, let&amp;rsquo;s evaluate whether the performance is alike depending on a training time. From the boxplot graph the difference of the distribution and their means is clearly visible. But how to formally prove the hypothesis, that squat speed will be different depending on the training time?&lt;/p&gt;
-&lt;img src=&#34;/img/sq_boxplot.png&#34; width=&#34;80%;&#34;&gt; 
+&lt;img src=&#34;https://deadlift.lt/img/sq_boxplot.png&#34; width=&#34;80%;&#34;&gt; 
 &lt;p&gt;Luckily in statistics there is a simple method to test that - it&amp;rsquo;s called a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Student%27s_t-test&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;t-test&lt;/a&gt; and it is used to determine if there is a significant difference between the means of two groups. Some assumptions need to be made in order to use this test and interpret it&amp;rsquo;s results in a correct manner. To put this into simple words: data should be normally distributed, scales should be continuous/ordinal and data should be a simple random sample from a population. My experiment design had some flaws &lt;em&gt;(comparison of AM and PM sessions came to my mind right after I finished squatting everyday)&lt;/em&gt;, but let&amp;rsquo;s assume that the conditions were the same each day (in reality they might differ due to rest time, eating, stress level, previous workouts - I can list possible factors for ages) and the measurements are solid &lt;em&gt;(recordings were done using 30 frames per second, so uncertainty in this digital measuring device is 0.0(3) seconds, which is not that bad)&lt;/em&gt;. However, we can test whether the data is normally distributed &lt;em&gt;(I had to remove the best result from PM training to fit in)&lt;/em&gt; - the qq plot graph having 95% of confidence intervals is below (all points fit in):&lt;/p&gt;
-&lt;img src=&#34;/img/sq_normal.png&#34; width=&#34;80%;&#34;&gt; 
+&lt;img src=&#34;https://deadlift.lt/img/sq_normal.png&#34; width=&#34;80%;&#34;&gt; 
 &lt;p&gt;Now it safe(ish) to test the null hypothesis &lt;em&gt;(the means of AM and PM sessions are equal)&lt;/em&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;t.test(duration ~ session, data = sq)
 &lt;/code&gt;&lt;/pre&gt;
